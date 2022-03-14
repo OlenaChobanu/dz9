@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 5000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000;
+    background-image: url(../images/background.jpg);
+}
+
+.form {
+    font-family: 'PT Sans Narrow', sans-serif;
+    width: 460px;
+    color: #000;
+    position: fixed;
+    padding: 44px 80px 58px 80px;
+    top: 50%;
+    left: 50%;
+    margin-left: -230px;
+    transform: translateY(-50%);
+    box-shadow: 0 30px 50px rgba(0, 1, 1, 0.75);
+    background-repeat: repeat;
+    background-image: url(../images/sepia.jpg);
+    background-color: #fff;
+}
+
+.button-close,
+.button-enter {
+    cursor: pointer;
+    border: none;
+}
+
+.button-close {
+    position: absolute;
+    top: 9px;
+    right: -33px;
+    width: 19px;
+    height: 19px;
+    padding: 0;
+    background-color: transparent;
+}
+
+.button-close::after {
+    content: "";
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-image: url(../images/cross.png);
+    background-size: 19px 19px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title {
+    font-size: 30px;
+    line-height: 42px;
+    margin-top: 0;
+    margin-bottom: 17px;
+}
+
+.subtitle {
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 11px;
+}
+
+.input-container {
+    margin-bottom: 9px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    position: relative;
+}
+
+.input-container:last-of-type {
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 17px 30px 17px 17px;
+    width: 100%;
+    border: 2px solid #000101;
+    background-repeat: repeat;
+    background: transparent;
+}
+
+input::placeholder {
+    color: #000;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.input-container::after {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    background-size: 15px 15px;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 19px;
+    right: 17px;
+}
+
+.input-login-container::after {
+    background-image: url(../images/user.png);
+}
+
+.input-password-container::after {
+    background-image: url(../images/lock.png);
+}
+
+div.forgot-password {
+    text-align: right;
+    margin-bottom: 18px;
+}
+
+a.forgot-password {
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+} 
+
+.button-enter {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 14px;
+    line-height: 24px;
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+}
